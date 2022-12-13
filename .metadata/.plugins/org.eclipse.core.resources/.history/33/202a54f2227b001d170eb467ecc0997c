@@ -1,0 +1,53 @@
+package com.example.project.service.serviceImpl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.example.project.dtos.request.CompanyRequestDto;
+import com.example.project.dtos.request.CompanyWorkerRequestDto;
+import com.example.project.dtos.response.CompanyWorkerResponseDto;
+import com.example.project.model.CompanyWorker;
+import com.example.project.repository.CompanyWorkerRepository;
+import com.example.project.service.CompanyWorkerService;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class CompanyWorkerServiceImpl implements CompanyWorkerService{
+	
+	private final CompanyWorkerRepository workerRepository;
+	private final ModelMapper modelMapper;
+	@Override
+	public List<CompanyWorker> getAllCompanyWorker() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public CompanyWorkerResponseDto getByCompanyWorkerId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public CompanyWorkerResponseDto saveCompanyWorker(CompanyWorkerRequestDto companyWorkerRequestDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public CompanyWorkerResponseDto updateCompanWorker(CompanyWorker companyWorker) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Boolean deleteByCompanyWorkerId(Long Id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+
+}
